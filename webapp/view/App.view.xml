@@ -1,14 +1,12 @@
-<mvc:View
-    controllerName="project.controller.App"
-    xmlns:mvc="sap.ui.core.mvc"
-    displayBlock="true"
-    xmlns="sap.m"
->
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="project.controller.App" displayBlock="true">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
 				<Page id="page" title="{i18n>title}">
-					<content />
+					<content>
+					    <Button xmlns="sap.m" text="GİRİŞ " id="girisbutton" width="20em" press=".onPress" type="Accept"/>
+					    <Button xmlns="sap.m" text="SİPARİŞLER" id="siparisbutton" width="20em"/>
+					</content>
 				</Page>
 			</pages>
 		</App>

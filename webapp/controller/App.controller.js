@@ -1,5 +1,5 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
+    "sap/ui/core/mvc/Controller",
 ],
 	/**
 	 * @param {typeof sap.ui.core.mvc.Controller} Controller
@@ -7,9 +7,12 @@ sap.ui.define([
 	function (Controller) {
 		"use strict";
 
-		return Controller.extend("project.controller.App", {
-			onInit: function () {
-
-			}
+		return Controller.extend("project.App", {
+			
+                onPress: function() {
+       window.location.href="https://workspaces-ws-rtzbl-app1.eu10.trial.applicationstudio.cloud.sap/giris.html";  
+     }
+           
+            
 		});
 	});
